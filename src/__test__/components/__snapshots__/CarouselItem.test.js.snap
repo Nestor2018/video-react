@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselItem Snapshot Comprobar la UI del componente CarouselItem 1`] = `
+<div
+  className="carousel-item"
+>
+  <img
+    className="carousel-item__img"
+  />
+  <div
+    className="carousel-item__details"
+  >
+    <div>
+      <img
+        alt="Play Icon"
+        className="carousel-item__details--img"
+        src="test-file-stub"
+      />
+      <img
+        alt="Plus Icon"
+        className="carousel-item__details--img"
+        onClick={[Function]}
+        src="test-file-stub"
+      />
+    </div>
+    <p
+      className="carousel-item__details--title"
+    />
+    <p
+      className="carousel-item__details--subtitle"
+    >
+      undefined undefined undefined
+    </p>
+  </div>
+</div>
+`;

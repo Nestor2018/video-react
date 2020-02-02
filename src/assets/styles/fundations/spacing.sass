@@ -1,0 +1,55 @@
+//   ######  ########     ###     ######  #### ##    ##  ######
+//  ##    ## ##     ##   ## ##   ##    ##  ##  ###   ## ##    ##
+//  ##       ##     ##  ##   ##  ##        ##  ####  ## ##
+//   ######  ########  ##     ## ##        ##  ## ## ## ##   ####
+//        ## ##        ######### ##        ##  ##  #### ##    ##
+//  ##    ## ##        ##     ## ##    ##  ##  ##   ### ##    ##
+//   ######  ##        ##     ##  ######  #### ##    ##  ######
+
+
+
+@mixin constructor($num)
+	padding: $num
+	&_margin
+		margin: $num
+
+	&_top
+		padding-top: $num
+		&_margin
+			margin-top: $num
+
+	&_bottom
+		padding-top: $num
+		&_margin
+			margin-bottom: $num
+
+	&_left
+		padding-top: $num
+		&_margin
+			margin-left: $num
+
+	&_right
+		padding-top: $num
+		&_margin
+			margin-right: $num
+
+.spaced
+	padding: $space
+
+//.space_tamañño_dirección_margin
+//.space_tamañño_dirección-padding
+
+.space
+	@include constructor($space)
+
+	&_2
+		@include constructor($space * 2)
+
+	&_3
+		@include constructor($space * 3)
+
+	&_4
+		@include constructor($space * 4)
+
+	&_5
+		@include constructor($space * 5)

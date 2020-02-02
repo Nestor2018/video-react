@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel Snapshot Comprobar la Ui del componente Carouse 1`] = `
+<section
+  className="carousel"
+>
+  <div
+    className="carousel__container"
+  />
+</section>
+`;
