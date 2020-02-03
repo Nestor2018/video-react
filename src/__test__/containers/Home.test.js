@@ -1,16 +1,17 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
+import { create } from 'react-test-renderer';
 
-import Header from '../../components/Header';
+import Home from '../../containers/Home';
 import ProviderMock from '../../__mocks__/ProviderMock';
 
-describe('<Header />', () => {
+describe('<Home/>', () => {
 	const header = shallow(
 		<ProviderMock>
-			<Header />
+			<Home />
 		</ProviderMock>
 	);
-	test('Render del componente Header', () => {
+	test('Render del container Home', () => {
 		expect(header.length).toEqual(1);
 	});
 });

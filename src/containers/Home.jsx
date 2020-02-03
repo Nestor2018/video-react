@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import '../assets/styles/app.sass';
@@ -13,7 +13,7 @@ const Home = ({ myList, trends, originals }) => {
 			<Search />
 			{myList.length > 0 && (
 				<Categories title="Mi lista">
-					<Carousel>{myList.map((item) => <CarouselItem key={item.id} {...item} />)}</Carousel>
+					<Carousel>{myList.map((item) => <CarouselItem key={item.id} {...item} isList />)}</Carousel>
 				</Categories>
 			)}
 
