@@ -32,8 +32,8 @@ describe('Actions', () => {
 	});
 
 	test('logoutRequest Action', () => {
-		const payload = userMock;
-		const expect = {
+		const payload = [];
+		const expected = {
 			type: LOGOUT_REQUEST,
 			payload
 		};
